@@ -178,8 +178,8 @@ ipconfig /all
 echo.
 echo Do IP trong mang LAN:
 for /l %%i in (1,1,1000) do (
-  ping -n 1 192.168.0.%%i | find "TTL="
-  arp -a 192.168.0.%%i | find "192.168.0.%%i"
+  ping -n 1 192.###.0.%%i | find "TTL="
+  arp -a 192.###.0.%%i | find "192.###.0.%%i"
   echo.
 )
 pause
